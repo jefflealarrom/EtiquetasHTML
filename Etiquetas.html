@@ -10,7 +10,8 @@ Dentro de la etiqueta HTML, solo deben ir las etiquetas <head> y <body>-->
     <meta charset="UTF-8"> <!-- se usa dentro de la seccion <head> para especificar el juego de caracteres que va a 
     utilizar la web. Ayuda a garantizar que los caracteres se muestren correctamente -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- se utiliza para controlar como el navegador móvil 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se utiliza para controlar como el navegador móvil 
     representa y ajusta el contenido da una web en los dispositivos moviles. width=device-width establece el ancho de la página 
     para que sea igual al ancho de la pantalla del dispositivo. initial-scale=1.0 establece el nivel de zoom inicial cuando se carga la página-->
 
@@ -20,7 +21,8 @@ Dentro de la etiqueta HTML, solo deben ir las etiquetas <head> y <body>-->
 documento y se mostrará en el navegador web.-->
 
 
-<body> <!-- Marca el comienzo de la web, todo lo que esta dentro de esta etiqueta es lo que se va a mostar: texto, imagenes al usuario-->
+<body>
+    <!-- Marca el comienzo de la web, todo lo que esta dentro de esta etiqueta es lo que se va a mostar: texto, imagenes al usuario-->
 
     <header>
         <h1>Título de la Página</h1>
@@ -86,7 +88,8 @@ documento y se mostrará en el navegador web.-->
     <h6>Sub-sub-sub-subtítulo</h6>
 
 
-    <p>Parrafos</p> <!--Los párrafos por defecto en todos los navegadores comienzan ocupando una línea nueva. 
+    <p>Parrafos</p>
+    <!--Los párrafos por defecto en todos los navegadores comienzan ocupando una línea nueva. 
     Por este motivo, si necesitamos incluir un salto de línea dentro de nuestro texto, lo correcto es usar un párrafo nuevo.-->
 
     <p>esto es un parrafo de una linea</p>
@@ -94,7 +97,8 @@ documento y se mostrará en el navegador web.-->
     <p>esto es un parrafo</p>
     <p>de varias lineas</p>
 
-    <p>Texto con <br> salto de linea </p> <!-- no es recomendable usar la etiqueta salto de linea <br> de manera excesiva ya
+    <p>Texto con <br> salto de linea </p>
+    <!-- no es recomendable usar la etiqueta salto de linea <br> de manera excesiva ya
     que puede romper la estructura semantica y la legibilidad del contenido en diferentes dispositivos y tamaños de pantalla-->
 
     <p>Etiqueta <em>enfasis</em></p> <!--Utilizado para hacer enfasis en alguna palabra o texto-->
@@ -112,8 +116,75 @@ documento y se mostrará en el navegador web.-->
     sus otros atributos son "alt" que nos permite proporcionar un texto altyernativo en caso de que la imagen no se
     no se pueda mostrar. También están los tributos de alto y ancho que son "width" ancho y "height" altura -->
 
-    
+    <div class="grupo-etiquetas">
+        <span class="etiqueta">Noticias</span> <!--la etiqueta span se utiliza para aplicar estilos a una 
+        parte especifica sin afectar su estructura general, esta etiqueta ocupa por defecto solo el ancho y el 
+        alto necesario para su contenido, generalmente se usa para mostrar elementos en una misma linea o aplicar
+        estilos diferentes a parte del texto: colores, tamaños o fuentes-->
+        <span class="etiqueta">Internacional</span>
+        <span class="etiqueta">Economía</span>
+        <span class="etiqueta">España</span>
+    </div>
 
+
+    <!--LISTAS-->
+    <ul> <!--: Listas no ordenadas: Utilizada para presentar una lista de elementos en un orden no específico, 
+    generalmente con viñetas como marcadores.-->
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+    </ul>
+
+    <ol> <!--lista ordenada: Utilizada para presentar una lista de elementos en un orden específico, 
+     generalmente con números o letras como marcadores.-->
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+    </ol>
+
+    <dl> <!--listas de definicion:  Utilizada para representar una lista de términos
+    y sus definiciones asociadas. -->
+        <dt>Término 1</dt> <!--<dt> se utiliza para marcar un término en una lista de definición-->
+        <dd>Definición 1</dd> <!--<dd> se utiliza para marcar la definición del término correspondiente-->
+        <dt>Término 2</dt>
+        <dd>Definición 2</dd>
+        <dt>Término 3</dt>
+        <dd>Definición 3</dd>
+    </dl>
+
+    <!--Tablas-->
+    <table border="1"> <!--Las tablas se usan para mostrar los datos en filas y columnas organizadas
+    La estructura básica de una tabla en HTML implica el uso de etiquetas como <table>, <tr>, <td>, 
+    y opcionalmente <th> para encabezados de columna.-->
+        <tr>
+            <thead> <!--se utiliza para definir la sección de encabezado de una tabla. Normalmente, se colocan los encabezados 
+                de las columnas dentro de esta etiqueta.-->
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+        </tr>
+        </thead> 
+        <tbody> <!--se utiliza para agrupar el cuerpo principal de la tabla. Contiene las filas y celdas de datos principales.-->
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>alguien mas</td>
+                <td>28</td>
+                <td>Egipto</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--formularios-->
+    
 
 
 
